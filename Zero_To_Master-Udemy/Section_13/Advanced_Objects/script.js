@@ -3,7 +3,6 @@
 var object1 = { value: 10 };
 var object2 = object1;
 var object3 = { value: 10 };
-
 // [] === []
 //      false
 // object1 === object2
@@ -24,7 +23,6 @@ const object4 = {
         console.log(this);
     }
 }
-
 // object4.a()
 //      {a: f()}
 
