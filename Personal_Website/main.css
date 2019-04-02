@@ -1,0 +1,170 @@
+/* Body */
+
+* {
+    margin: auto 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(84, 13, 123);
+}
+
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* ID's */
+
+#title {
+    color: rgb(64, 5, 96);
+    font-family: 'Cinzel', serif;
+    background-image: url("moonlight.jpg");
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    cursor: default;
+}
+
+/* Classes */
+
+.categories {
+    color: rgb(96, 212, 96);
+    font-family: 'Merienda', cursive;
+    font-size: 2em;
+    line-height: 10px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    text-align: right;
+    cursor: default;
+}
+
+.doc-container {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    grid-gap: 20px;
+    justify-items: start;
+    align-items: start;
+    margin: 0px 10px;
+}
+
+.doc-container a {
+    color: rgb(255, 209, 116);
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-decoration: none;
+    transition: transform 1s;
+}
+
+.doc-container a:active {
+    color: rgb(244, 187, 73);
+}
+
+.doc-container a:visited {
+    color: rgb(255, 209, 116);
+}
+
+.doc-container a:hover {
+    color: rgb(150, 89, 184);
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.doc-link {
+    font-size: 2em;
+    grid-column: 1/-1;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.doc-cover {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.doc-cover img {
+    width: 100%;
+    transition: all 1s;
+}
+
+.doc-cover img:hover {
+    transform: scale(1.025);
+}
+
+.doc-details {
+    grid-column: 2/-1;
+    border: 5px solid white;
+    padding: 10px 0px 30px 10px;
+}
+
+.doc-details h5 {
+    color: rgb(244, 73, 73);
+    font-size: 1.25em;
+}
+
+.info {
+    color: rgb(96, 212, 96);
+    font-family: 'Cormorant Garamond', serif;
+    font-variant: small-caps;
+    font-size: 1.25em;
+    margin: 10px 10px 10px 10px;
+    text-indent: 25px;
+    cursor: default;
+}
+
+@media only screen
+    and (max-width: 1000px) {
+        .categories {
+            font-size: 1.75em;
+        }
+        .doc-link {
+            font-size: 1.75em;
+        }
+        .doc-details h5 {
+            font-size: 0.75em;
+    }
+        .info {
+            font-size: 1em;
+        }
+}
+
+@media only screen
+    and (max-width: 800px) {
+        .categories {
+            font-size: 1.5em;
+        }
+        .doc-link {
+            font-size: 1.5em;
+        }
+        .doc-details h5 {
+            font-size: 0.65em;
+    }
+        .info {
+            font-size: 0.85em;
+        }
+}
+
+@media only screen
+    and (max-width: 650px) {
+        .categories {
+            font-size: 1.25em;
+        }
+        .doc-link {
+            font-size: 1.25em;
+        }
+        .doc-details {
+            grid-column: 1/-1;
+        }
+}
+
+@media only screen
+    and (max-width: 450px) {
+        #title {
+            font-size: 0.75em;
+        }
+        .categories {
+            font-size: 0.95em;
+        }
+}
