@@ -1,5 +1,4 @@
 // terminal 
-
 ls                      // lists everything in current Directory
 pwd                     // present working Directory
 cd                      // change Directory 
@@ -20,12 +19,10 @@ rm -r folerName                     // removes Directory or folder
 say the computer speaks             // say "the computer speaks"
 
 // customize bash
-
 nano ~/.bash_profile    // opens bash profile
 source ~/.bash_profile  // reloads profile
 
 // customize fish
-
 fish_config                     // opens window to config
 ~/.config/fish/config.fish      // access profile
 nano ~/.fish_profile            // opens bash profile
@@ -33,7 +30,6 @@ source ~/.fish_profile          // reloads profile
 
 // git + github
 // create repository / copy https://projectFilePath.git
-
 git clone `https://projectFilePath.git` // download repository / minus back-tics
 cd projectFilePath/                     // must be in a folder with a .git Directory
 git status                              // check status of files
@@ -44,4 +40,11 @@ git push                                // updates gitHub
 git pull                                // pull the latest versions
 git branch newBranch                    // starts a new branch
 git checkout newBranch                  // switch to new branch
+git checkout -b newBranch               // starts and switches to, newBranch
 git merge master                        // merges master into your branch
+git diff                                // see differences
+git fetch upstream                      // fetch the branches and their respective commits
+git remote -v                           // see current remote repository for your fork
+git remote add upstream                 // 
+git pull upstream master                //
+git merge upstream/master               // merge changes from upstream/master to local master
